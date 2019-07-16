@@ -8,5 +8,6 @@ namespace CompositePattern
 {
     class Leaf
     {
+
     }
 }
