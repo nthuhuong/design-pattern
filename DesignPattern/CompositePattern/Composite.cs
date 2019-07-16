@@ -30,7 +30,7 @@ namespace CompositePattern
             }
             Console.WriteLine(name);
             foreach (Component component in _children)
-                component.Desplay(depth + 2);
+                component.Display(depth + 2);
         }
     }
 }
