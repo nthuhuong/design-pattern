@@ -24,11 +24,8 @@ namespace CompositePattern
         }
         public override void Display(int depth)
         {
-            for (int i = 0; i < depth;i++ )
-            {
-                Console.WriteLine('-');
-            }
-            Console.WriteLine(name);
+            
+            Console.WriteLine(new String ('-',depth) + name);
             foreach (Component component in _children)
                 component.Display(depth + 2);
         }
