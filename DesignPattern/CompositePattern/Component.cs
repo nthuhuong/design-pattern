@@ -6,15 +6,15 @@ using System.Threading.Tasks;
 
 namespace CompositePattern
 {
-    class Component
+    abstract class Component
     {
         protected string name;
         public Component(string name)
         {
             this.name = name;
         }
-        public abstract void Add(Component c);
-        public abstract void Remove(Component c);
-        public abstract void Display(int depth);
+        public abstract void AddComp(Component c);
+        public abstract void RemoveComp(Component c);
+        public abstract void DisplayComp(int depth);
     }
 }

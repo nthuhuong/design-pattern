@@ -14,20 +14,20 @@ namespace CompositePattern
         {
 
         }
-        public override void Add(Component c)
+        public override void AddComp(Component c)
         {
             _children.Add(c);
         }
-        public override void Remove(Component c)
+        public override void RemoveComp(Component c)
         {
             _children.Remove(c);
         }
-        public override void Display(int depth)
+        public override void DisplayComp(int depth)
         {
             
             Console.WriteLine(new String ('-',depth) + name);
             foreach (Component component in _children)
-                component.Display(depth + 2);
+                component.DisplayComp(depth + 2);
         }
     }
 }

@@ -13,16 +13,16 @@ namespace CompositePattern
         {
             
         }
-        public override void Add(Component c)
+        public override void AddComp(Component c)
         {
 
             Console.WriteLine("Can't Add a Component");
         }
-        public override void Remove(Component c)
+        public override void RemoveComp(Component c)
         {
-            Console.WriteLine("Can't Remove a Component")
+            Console.WriteLine("Can't Remove a Component");
         }
-        public override void Display(int depth)
+        public override void DisplayComp(int depth)
         {
             Console.WriteLine(new String('-', depth) + name);
         }
